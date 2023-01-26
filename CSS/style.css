@@ -9,19 +9,29 @@ img
     display: block;
 }
 
-body {
-    padding-left: 21rem;
-    padding-right: 21rem;
-}
 
 header {
     display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     font-family: 'El Messiri', sans-serif;
     padding-top: 5.6rem;
-    max-width: 1440px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.left-part-header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1002px;
+    width: 100%;
 }
 
 a {
@@ -35,6 +45,7 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 742px;
 }
 
 ul {
@@ -49,16 +60,19 @@ ul {
     font-size: 1.8rem;
 }
 
-.basket {
-    display: flex;
-    margin-left: 22rem;
-    background-color: #FFFFFF;
-    border: 0px solid #FFFFFF;
+.basket-menu {
+    border: none;
+    background-color: transparent;
 }
 
 .basket:hover {
     transform: scale(1.5);
     transition: 0.5s;
+}
+
+section {
+    display: flex;
+    justify-content: center;
 }
 
 .section-1 {
@@ -67,11 +81,19 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    max-width: 1500px;
+    padding-bottom: 15.9rem;
 }
 
 .olive {
-    padding-left: 8rem;
-    padding-right: 12.3rem;
+    display: block;
+    width: 100%;
+    width: 557px;
+    height: 694px;
+    margin-right: 12.3rem;
 }
 
 .text {
@@ -156,12 +178,63 @@ ul {
     transition: 0.5s;
 }
 
-@media screen and (min-width: 500px) {
+.menu{
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
     nav,
     .text,
     .button-smth {
     max-width: 460px;
     width: 100%;
+    }
+    .nav{
+        display: none;
+    }
+    .menu{
+        display: initial;
+    }
+    .text{
+        justify-content: center;
+        align-items: center;
+    }
+    .olive{
+        margin-right: 0;
+    }
+    .button-smth{
+        margin-top: 2.4rem;
+        flex-direction: column;
+    }
+    .left-part-header{
+        max-width: 40px;
+    }
+    .button{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .menu{
+        display: none;
+    }
+    .section-1{
+        align-items: center;
+        flex-direction: column;
+    }
+    .text{
+        justify-content: center;
+        align-items: center;
+    }
+    .olive{
+        margin-right: 0;
+    }
+    .button-smth{
+        margin-top: 2.4rem;
+        flex-direction: column;
+    }
+    .section-1{
+        padding-bottom: 9.6rem;
     }
 }
 
