@@ -154,7 +154,7 @@ ul {
 .button-smth:hover{
     transform: scale(1.05);
     transition: 0.5s;
-    }
+}
 
 @media screen and (min-width: 500px) {
     nav,
@@ -163,7 +163,7 @@ ul {
     max-width: 460px;
     width: 100%;
     }
-    }
+}
 
 
 .form {
@@ -176,10 +176,81 @@ ul {
 }
 
 h2 {
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    color: var(--text-color);
     padding-top: 5.6rem;
     line-height: 133.3%;
-    font-weight: 500;
-    color: var(--text-green-color);
+    font-weight: 400;
+    padding-bottom: 2.4rem;
+    font-size: 4.8rem;
+}
+
+.form-text {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    line-height: 133.3%;
+    font-weight: 300;
+    font-size: 1.8rem;
     padding-bottom: 2.4rem;
 }
+
+.fieldset-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-wrapper > input:focus {
+    background-color: rgba(152, 212, 152, 0.199);
+}
+
+.button-class{
+    background-color: transparent;
+    font-size: 1.8rem;
+    line-height: 177%;
+    margin-top: 2.4rem;
+    display: flex;
+    text-align: center;
+    height: 4.8rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 4.8rem;
+    margin-bottom: 1rem;
+    gap: 3rem;
+}
+
+.button-send {
+    border: 1px solid #688800;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    color:var(--text-green-color);
+    background-color: transparent;
+    font-size: 1.8rem;
+    line-height: 177%;
+    margin-top: 2.4rem;
+    display: flex;
+    text-align: center;
+    height: 4.8rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 4.8rem;
+}
+
+.button-img {
+    display: flex;
+}
+
+.button-send:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    }
