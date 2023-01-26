@@ -201,7 +201,9 @@ section {
     }
     .olive{
         margin-right: 0;
-    }
+        width: 280px;
+        height: 314px;
+        }
     .button-smth{
         margin-top: 2.4rem;
         flex-direction: column;
