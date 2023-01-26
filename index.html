@@ -13,9 +13,9 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <a href=""><img src="/image/logo.svg" alt="logo"></a>
-            <ul>
+            <ul class="info">
                 <li><a href="">Масло</a></li>
                 <li><a href="">О нас</a></li>
                 <li><a href="">Отзывы</a></li>
@@ -23,31 +23,54 @@
                 <li><a href="">Контакты</a></li>
             </ul>
         </nav>
-        <button>
+        <button class="basket">
             <img src="/image/basket.svg" alt="basket">
         </button>
     </header>
     <main>
-        <section>
-            <div>
+        <section class="section-1">
+            <div class="olive">
                 <img src="/image/olive.png" alt="olive">
             </div>
-            <div>
-                <h1>Масло "Для салата"</h1>
-                <p>Название говорит само за себя. Это идеальная
+            <div class="text">
+                <h1 class="amatic">Масло "Для салата"</h1>
+                <p class="roboto">Название говорит само за себя. Это идеальная
                 заправка,которая даже скучной и привычной капусте
                 придаст неповторимый вкус и аромат.
                 </p>
-                <div>
-                    <button>-</button>
-                    <p>2</p>
-                    <button>+</button>
+                <div class="count">
+                    <button class="button-plus-minus">-</button>
+                    <p class="count-text">2</p>
+                    <button class="button-plus-minus">+</button>
                 </div>
-                <div>
-                    <a href="">Подробнее</a>
-                    <a href="">В корзину</a>
+                <div class="button">
+                    <a class="button-smth" href="">ПОДРОБНЕЕ</a>
+                    <a class="button-smth" href="">В КОРЗИНУ</a>
                 </div>
             </div>
+        </section>
+        <section class="section-2">
+            <form name="contact" method="POST" data-netlify="true" class="form-send">
+                <div class="form">
+                <h2>Оставьте заявку</h2>
+                <p class="roboto">Мы свяжемся с вами в ближайшее время</p>
+                    <fieldset class="fieldset-1">
+                        <div class="input-wrapper">
+                            <label for="name">Название мероприятия</label>
+                            <input name="Название мероприятия" type="text" id="name" placeholder="Дегустация" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="date">Дата</label>
+                            <input name="Дата рождения" type="date" id="date" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="payment">Оплата</label>
+                            <select name="оплата" id="payment" required>
+                            <option value="cash">Наличными</option>
+                            <option value="card">Картой</option>
+                            </select>
+                    </fieldset>
+                </div>
         </section>
     </main>
 </body>
